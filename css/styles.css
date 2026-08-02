@@ -7,3 +7,236 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+@font-face {
+  font-family: 'STAR-JEDI';
+  src: url('../storage/fonts/star-jedi/Starjhol.ttf');
+  src: url(../storage/fonts/star-jedi/Starjedi.ttf);
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; 
+}
+
+header{
+    padding: 2%;
+    position: sticky;
+    top: 0.0005%;
+    display: block;
+    color: gold;
+    justify-content: 50%;
+    font-family: "STAR-JEDI", Starjout;
+    align-items: center;
+    background-color: black;
+    text-align: center;
+    h1{
+        font-size: 80px;
+        .image-title{
+            width: 100px;
+            margin-left: 30px;
+
+        }
+    }
+}
+
+
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    gap: 10px;
+    padding:  12px;
+    border-radius: 10px;
+    
+}
+
+a:hover{
+    color: gold;
+}
+
+/* buscador por personajes */
+
+.search-bar{
+    position: sticky;
+    top: 190px;
+    display: flex;
+    color: gold;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    gap: 20px;
+    max-width: 100%;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(1, 15, 57, 0.85);
+}
+
+/* selector */
+
+.search-type{
+    display: grid;
+    font-family: "STAR-JEDI", Starjout;
+    color: gold;
+    font-size: 15px;
+    border-radius: 10px;
+    height: 45px;
+    padding: 10px;
+    margin: 19px ;
+    align-items: center;
+    background-color: rgba(1, 15, 57, 0.7);
+}
+
+/* Selector */
+
+.search-bar input[type="search"]{
+    display: grid;
+    padding:  15px;
+    width: 400px;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: gold;
+    font-family: "STAR-JEDI", Starjout;
+    height: 45px;
+    margin-left: 20px;
+    background-color: rgba(1, 15, 57, 0.7);
+
+}
+
+/* Imagen del Body */
+
+body{
+    display: grid;
+    background-image: url(../storage/img/tripio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* paneles de informacion */
+
+.card-panel{
+    width: 100%;
+}
+
+.tipo{
+    display: grid;
+    border-radius: 10px;
+    max-width: 100%;
+    position: static;
+    padding: 10px;
+    font-family: "STAR-JEDI", Starjout;
+    color: gold;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: rgba(1, 15, 57, 0.7);
+
+}
+.card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    justify-content: space-around;
+    
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgba(1, 15, 57, 0.7);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* pie de pagina */
+
+.site-footer {
+  margin-top: 28px;
+  padding: 20px 22px;
+  border-radius: 10px;
+  background-color: rgba(1, 15, 57, 0.7);
+  border: 1px solid gold;
+  color: gold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 12px;
+  display: grid;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 0.95rem;
+}
+
+/* buttons */
+
+button{
+    color: black;
+    font-size: 17px;
+    padding: 10px 15px;
+    max-width: 500px;
+    background-color: gold;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    z-index: 100;
+}
+button:hover{
+    color: gold;
+    background-color: black;
+}
+
+
+
+@media (max-width: 590px) {
+    .card{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(400px, 1fr));
+        padding: 20px 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    a{
+        display: grid;
+    }
+
+    .tipo{
+        align-items: center;
+        text-align: center;
+    }
+
+    .titulo,
+    .image-title{
+        margin-top: 15px;
+        display: grid;
+        font-size: clamp(4rem, 8vw, 6rem);
+        justify-content: center;
+    }
+    
+    .search-bar input[type="search"]{
+        display: grid;
+        align-items:end;
+        position: fixed;
+        bottom: 1%;
+        background-color: rgba(1, 15, 57);
+    }
+    .search-type,
+    .search-bar div{
+         background-color: rgba(1, 15, 57, 0.00001);
+        display: none;
+    }
+
+    body{
+        display: grid;
+        background-image: url(../storage/img/swlogo.png);
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+}
