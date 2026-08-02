@@ -9,6 +9,63 @@
     <title>STARWARS SEARCH ENGINE</title>
 </head>
 <body>
-    
+    <header>
+    <div class="navegacion">
+        <!--titulo-->
+    <h1 class="titulo">@<img src="./storage/img/jedi.png" class="image-title"></h1>
+    <!-- barra de navegacion-->
+        <nav id="menu" class="menu">
+            <a class="boton" href=#naves data-resource="spaceships">naves</a>
+            <a class="boton" href=#especies data-resource="species">especies</a>
+            <a class="boton" href=#planetas data-resource="planets">planetas</a>
+            <a class="boton" href=#peliculas data-resource="films">peliculas</a>
+            <a class="boton" href=#personajes data-resource="people">personajes</a>   
+        </nav>
+    </div>
+</header>
+    <div>
+        <main class="main-content">
+                <!--barra de busqueda-->
+            <div class="search-bar">
+                <input id="search" type="search" placeholder="Buscar por nombre..." class="placeholder"/>
+                <select id="sort" aria-label="Ordenar resultados" class="search-type">
+                    <option value="name-asc" class="opcion">orden a-z</option>
+                    <option value="name-desc" class="opcion">orden z-a</option>
+                    <option value="height-desc"class="opcion">Mayor altura</option>
+                    <option value="height-asc"class="opcion">Menor altura</option>
+                </select>
+            </div>
+                <!--Seccion de cartas de informacion por tipo-->
+            <section class="card-panel">
+                <!--spaceships-->
+                <h1 class="tipo">naves</h1>
+                <div id="naves" class="card">
+                </div>
+                <!--species-->
+                <h1 class="tipo">especies</h1>
+                <div id="especies" class="card">    
+                </div>
+                <!--planets-->
+                <h1 class="tipo">planetas</h1>
+                <div id="planetas" class="card">
+                </div>
+                <!--films-->
+                <h1 class="tipo">peliculas</h1>
+                <div id="peliculas" class="card">    
+                </div>
+                <!--people-->
+                <h1 class="tipo">personajes</h1>
+                <div id="personajes" class="card">
+                </div>
+            </section>
+        </main>
+        <!--pie de pagina-->
+        <footer class="site-footer">
+            <p>Star Wars Explorer · Datos recuperados desde <a href="https://swapi.info" target="_blank" rel="noreferrer noopener">SWAPI</a></p>
+            <p>Guatemala, Ciudad</p>
+        </footer>
+    </div>
+    <!--script de java-->
+    <script src="./js/index.js"></script>
 </body>
 </html>
