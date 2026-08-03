@@ -14,12 +14,13 @@
         <!--titulo-->
     <h1 class="titulo">@<img src="./storage/img/jedi.png" class="image-title"></h1>
     <!-- barra de navegacion-->
+        <button id="menu-toggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu">☰</button>
         <nav id="menu" class="menu">
-            <a class="boton" href=#naves data-resource="spaceships">naves</a>
-            <a class="boton" href=#especies data-resource="species">especies</a>
-            <a class="boton" href=#planetas data-resource="planets">planetas</a>
-            <a class="boton" href=#peliculas data-resource="films">peliculas</a>
-            <a class="boton" href=#personajes data-resource="people">personajes</a>   
+            <a id="nav-naves" class="boton" href="#naves" data-resource="starships">naves</a>
+            <a id="nav-especies" class="boton" href="#especies" data-resource="species">especies</a>
+            <a id="nav-planetas" class="boton" href="#planetas" data-resource="planets">planetas</a>
+            <a id="nav-peliculas" class="boton" href="#peliculas" data-resource="films">peliculas</a>
+            <a id="nav-personajes" class="boton" href="#personajes" data-resource="people">personajes</a>   
         </nav>
     </div>
 </header>
@@ -36,7 +37,7 @@
                 </select>
             </div>
                 <!--Seccion de cartas de informacion por tipo-->
-            <section class="card-panel">
+            <section id="container" class="card-panel">
                 <!--spaceships-->
                 <h1 class="tipo">naves</h1>
                 <div id="naves" class="card">
@@ -66,6 +67,6 @@
         </footer>
     </div>
     <!--script de java-->
-    <script src="./js/index.js"></script>
+    <script type="module" src="./js/index.js"></script>
 </body>
 </html>
